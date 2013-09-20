@@ -1,0 +1,14 @@
+{
+  "name": "tumblr-masonry",
+  "description": "Tumblr blog viewer application.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "hogan-express": "0.4.x"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  }
+}
