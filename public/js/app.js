@@ -21,7 +21,7 @@ define([
                 router.on("route:home", function() {
                     view =
                         new PostsView({
-                            id: 'hardcore',
+                            id: 'thepeacefulsea',
                             type: 'user'
                         });
                 });
