@@ -140,9 +140,9 @@ define([
                                                     src: select['url'],
                                                     name: posts[post]['blog_name'],
                                                     date: (
-                                                        function(string) {
+                                                        function(timestamp) {
                                                             var now = new Date(),
-                                                                date = new Date(string),
+                                                                date = new Date(timestamp*1000),
                                                                 difference = now.getTime() - date.getTime(),
                                                                 seconds = Math.abs(difference) / 1000,
                                                                 minutes = seconds / 60,
@@ -156,7 +156,7 @@ define([
                                                                 hours < 36 && '1 day ago' ||
                                                                 days < 30 && Math.round(days) + ' days ago';
                                                         }
-                                                    )(posts[post]['date']),
+                                                    )(posts[post]['timestamp']),
                                                     avatar: (
                                                         function(post) {
                                                             return 'http://api.tumblr.com/v2/blog/' +
