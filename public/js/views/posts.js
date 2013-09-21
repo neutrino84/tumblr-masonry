@@ -154,7 +154,7 @@ define([
                                                                 minutes < 90 && '1 hour ago' ||
                                                                 hours < 24 && Math.round(hours) + ' hours ago' ||
                                                                 hours < 36 && '1 day ago' ||
-                                                                days < 30 && Math.round(days) + ' days ago';
+                                                                    Math.round(days) + ' days ago';
                                                         }
                                                     )(posts[post]['timestamp']),
                                                     avatar: (
